@@ -6,7 +6,7 @@ TOTman is a free, open-source, client-side tool that helps you optimize prompts 
 
 **🔒 100% Private** — Everything runs in your browser. No data is sent anywhere. No API keys needed.
 
-🌐 **Live:** [https://acmetasker.github.io/totman](https://acmetasker.github.io/totman)
+🌐 **Live:** [https://puneetkhamborkar.github.io/totman](https://puneetkhamborkar.github.io/totman)
 
 ---
 
@@ -38,11 +38,11 @@ Covers **every type of AI**: Text, Code, Image Gen, Video Gen, Audio/Speech, Age
 ## Getting Started
 
 ### Option 1: Use Online (Free)
-Visit [https://acmetasker.github.io/totman](https://acmetasker.github.io/totman) — no install needed.
+Visit [https://puneetkhamborkar.github.io/totman](https://puneetkhamborkar.github.io/totman) — no install needed.
 
 ### Option 2: Run Locally
 ```bash
-git clone https://github.com/AcmeTasker/totman.git
+git clone https://github.com/PuneetKhamborkar/totman.git
 cd totman
 open index.html
 ```
