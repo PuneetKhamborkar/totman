@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TOTman — Free, open-source Token Optimization Tool. Reduce AI prompt costs by 25%+ across ChatGPT, Claude, Gemini, Mistral, Grok, and 50+ AI models. Client-side, private, no data leaves your browser.">
+  <meta name="keywords" content="token optimizer, AI costs, prompt engineering, ChatGPT tokens, Claude tokens, Gemini tokens, token counter, prompt compressor, LLM cost calculator">
+  <meta name="author" content="TOTman Open Source Project">
+  <meta property="og:title" content="TOTman — Token Optimization Tool">
+  <meta property="og:description" content="Optimize your AI prompts. Save 25%+ on tokens. Compare costs across 50+ models. Free & open source.">
+  <title>TOTman — Token Optimization Tool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">Tm</div>
+        <div class="brand-text">
+          <h1>TOTman</h1>
+          <span class="tagline">Token Optimization Tool</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-theme" title="Toggle theme">☀️</button>
+        <button id="btn-paste" title="Paste from clipboard">📋 Paste</button>
+        <button id="btn-clear" title="Clear all">🗑️ Clear</button>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-label">Tokens (GPT-4o est.)</div>
+        <div class="stat-value" id="stat-tokens">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Words</div>
+        <div class="stat-value" id="stat-words">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Characters</div>
+        <div class="stat-value" id="stat-chars">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Est. Input Cost (GPT-4o)</div>
+        <div class="stat-value" id="stat-cost">$0.00</div>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="main-grid">
+
+      <!-- Editor Panel -->
+      <div class="editor-panel">
+        <div class="editor-toolbar">
+          <span class="editor-title">📝 Your Prompt</span>
+          <div class="editor-actions">
+            <button id="btn-copy" title="Copy optimized text">📄 Copy</button>
+            <button id="btn-optimize" class="btn-primary" title="Apply all optimizations">⚡ Optimize</button>
+          </div>
+        </div>
+        <textarea id="prompt-input" placeholder="Paste your AI prompt here...
+
+Example: I would like you to please help me write a very detailed and comprehensive guide about how to basically use Python for data analysis. Could you please make sure that the output is in a format that is easy to understand. It is important to note that I need you to cover each and every aspect of data analysis including data cleaning, visualization, and statistical analysis. In order to make the guide more useful, please include some examples. Due to the fact that I am a beginner, please keep the language simple and accessible."></textarea>
+      </div>
+
+      <!-- Results Panel -->
+      <div class="results-panel">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="optimize">⚡ Optimized</button>
+          <button class="tab-btn" data-tab="changes">📋 Changes</button>
+          <button class="tab-btn" data-tab="costs">💰 Costs</button>
+          <button class="tab-btn" data-tab="guide">📖 Guide</button>
+          <button class="tab-btn" data-tab="models">🗂️ Models</button>
+        </div>
+
+        <!-- Tab: Optimized Preview -->
+        <div class="tab-panel active" id="panel-optimize">
+          <div id="optimized-preview">
+            <p class="empty-state">Paste a prompt to see optimizations</p>
+          </div>
+          <div id="suggestions-list"></div>
+        </div>
+
+        <!-- Tab: Changes Detail -->
+        <div class="tab-panel" id="panel-changes">
+          <div id="changes-list"></div>
+        </div>
+
+        <!-- Tab: Cost Comparison -->
+        <div class="tab-panel" id="panel-costs">
+          <div id="cost-comparison">
+            <p class="empty-state">Enter a prompt to see cost comparisons</p>
+          </div>
+        </div>
+
+        <!-- Tab: Style Guide -->
+        <div class="tab-panel" id="panel-guide">
+          <div id="style-guide-content"></div>
+        </div>
+
+        <!-- Tab: All Models -->
+        <div class="tab-panel" id="panel-models">
+          <div id="model-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Savings Badge -->
+    <div class="savings-badge" id="savings-badge">
+      <span class="savings-number"><span id="savings-percent">0</span>%</span>
+      <span class="savings-label"><span id="savings-tokens">0</span> tokens saved</span>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>
+        <strong>TOTman</strong> — Token Optimization Tool v1.0 &nbsp;|&nbsp;
+        Open Source (MIT License) &nbsp;|&nbsp;
+        100% client-side — no data leaves your browser &nbsp;|&nbsp;
+        <a href="https://github.com/AcmeTasker/totman" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/models.js"></script>
+  <script src="js/tokenizer.js"></script>
+  <script src="js/optimizer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
