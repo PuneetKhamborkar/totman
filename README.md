@@ -6,7 +6,7 @@ TOTman is a free, open-source, client-side tool that helps you optimize prompts 
 
 **🔒 100% Private** — Everything runs in your browser. No data is sent anywhere. No API keys needed.
 
-🌐 **Live:** [https://puneetkhamborkar.github.io/totman](https://puneetkhamborkar.github.io/totman)
+🌐 **Live:** [https://wwww.totman.online](https://wwww.totman.online)
 
 ---
 
