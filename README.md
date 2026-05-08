@@ -38,7 +38,7 @@ Covers **every type of AI**: Text, Code, Image Gen, Video Gen, Audio/Speech, Age
 ## Getting Started
 
 ### Option 1: Use Online (Free)
-Visit [https://puneetkhamborkar.github.io/totman](https://puneetkhamborkar.github.io/totman) — no install needed.
+Visit [https://www.totman.online](https://www.totman.online) — no install needed.
 
 ### Option 2: Run Locally
 ```bash
