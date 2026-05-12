@@ -1,0 +1,91 @@
+{
+  "communities": {
+    "0": [
+      "js_models_ai_models",
+      "js_models_category_meta",
+      "js_models_formatcontextwindow",
+      "js_models_formatpricing",
+      "js_models_getmodelsbyprovider",
+      "js_models_getproviders",
+      "js_models_gettokenpricedmodels",
+      "js_models_provider_colors",
+      "models_js"
+    ],
+    "1": [
+      "js_optimizer_optimizer",
+      "optimizer_js"
+    ],
+    "2": [
+      "app_js",
+      "js_app_app"
+    ],
+    "3": [
+      "index_html",
+      "readme_md"
+    ],
+    "4": [
+      "tokenizer_js"
+    ]
+  },
+  "cohesion": {
+    "0": 0.22,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0
+  },
+  "gods": [
+    {
+      "id": "js_models_ai_models",
+      "label": "AI_MODELS",
+      "degree": 1
+    },
+    {
+      "id": "js_models_provider_colors",
+      "label": "PROVIDER_COLORS",
+      "degree": 1
+    },
+    {
+      "id": "js_models_category_meta",
+      "label": "CATEGORY_META",
+      "degree": 1
+    },
+    {
+      "id": "js_optimizer_optimizer",
+      "label": "Optimizer",
+      "degree": 1
+    },
+    {
+      "id": "js_app_app",
+      "label": "App",
+      "degree": 1
+    },
+    {
+      "id": "index_html",
+      "label": "TOTman Token Optimization Tool",
+      "degree": 1
+    },
+    {
+      "id": "readme_md",
+      "label": "TOTman README",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TOTman Token Optimization Tool",
+      "target": "TOTman README",
+      "source_files": [
+        "index.html",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 2599,
+    "output": 217
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "models.js",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L1",
+      "id": "models_js",
+      "community": 0,
+      "norm_label": "models.js"
+    },
+    {
+      "label": "AI_MODELS",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L12",
+      "id": "js_models_ai_models",
+      "community": 0,
+      "norm_label": "ai_models"
+    },
+    {
+      "label": "PROVIDER_COLORS",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L238",
+      "id": "js_models_provider_colors",
+      "community": 0,
+      "norm_label": "provider_colors"
+    },
+    {
+      "label": "CATEGORY_META",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L260",
+      "id": "js_models_category_meta",
+      "community": 0,
+      "norm_label": "category_meta"
+    },
+    {
+      "label": "getProviders()",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L273",
+      "id": "js_models_getproviders",
+      "community": 0,
+      "norm_label": "getproviders()"
+    },
+    {
+      "label": "getModelsByProvider()",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L280",
+      "id": "js_models_getmodelsbyprovider",
+      "community": 0,
+      "norm_label": "getmodelsbyprovider()"
+    },
+    {
+      "label": "getTokenPricedModels()",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L287",
+      "id": "js_models_gettokenpricedmodels",
+      "community": 0,
+      "norm_label": "gettokenpricedmodels()"
+    },
+    {
+      "label": "formatContextWindow()",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L294",
+      "id": "js_models_formatcontextwindow",
+      "community": 0,
+      "norm_label": "formatcontextwindow()"
+    },
+    {
+      "label": "formatPricing()",
+      "file_type": "code",
+      "source_file": "models.js",
+      "source_location": "L302",
+      "id": "js_models_formatpricing",
+      "community": 0,
+      "norm_label": "formatpricing()"
+    },
+    {
+      "label": "tokenizer.js",
+      "file_type": "code",
+      "source_file": "tokenizer.js",
+      "source_location": "L1",
+      "id": "tokenizer_js",
+      "community": 4,
+      "norm_label": "tokenizer.js"
+    },
+    {
+      "label": "optimizer.js",
+      "file_type": "code",
+      "source_file": "optimizer.js",
+      "source_location": "L1",
+      "id": "optimizer_js",
+      "community": 1,
+      "norm_label": "optimizer.js"
+    },
+    {
+      "label": "Optimizer",
+      "file_type": "code",
+      "source_file": "optimizer.js",
+      "source_location": "L9",
+      "id": "js_optimizer_optimizer",
+      "community": 1,
+      "norm_label": "optimizer"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "id": "app_js",
+      "community": 2,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "App",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L6",
+      "id": "js_app_app",
+      "community": 2,
+      "norm_label": "app"
+    },
+    {
+      "label": "TOTman Token Optimization Tool",
+      "file_type": "document",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "TOTman Open Source Project",
+      "contributor": null,
+      "id": "index_html",
+      "community": 3,
+      "norm_label": "totman token optimization tool"
+    },
+    {
+      "label": "TOTman README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Puneet Khamborkar",
+      "contributor": null,
+      "id": "readme_md",
+      "community": 3,
+      "norm_label": "totman readme"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_ai_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_provider_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_category_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L273",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_getproviders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L280",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_getmodelsbyprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_gettokenpricedmodels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L294",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_formatcontextwindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models.js",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "models_js",
+      "target": "js_models_formatpricing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "optimizer.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "optimizer_js",
+      "target": "js_optimizer_optimizer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "js_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index_html",
+      "target": "readme_md"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "04812a2c80247d43e56f77b9d0348be067db2e2e"
+}
